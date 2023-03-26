@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEEDLINK", "SEEDLINK.csproj", "{1DDA7F60-6893-4E74-BFEF-B48FA91C409E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B4288CDA-A4E5-4B64-B401-78B64EDE6619}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DDA7F60-6893-4E74-BFEF-B48FA91C409E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDA7F60-6893-4E74-BFEF-B48FA91C409E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDA7F60-6893-4E74-BFEF-B48FA91C409E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDA7F60-6893-4E74-BFEF-B48FA91C409E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20678790-396C-49A3-BBB9-7F7EFED99604}
+	EndGlobalSection
+EndGlobal

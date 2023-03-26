@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ADMIN.master.cs" Inherits="SEEDLINK.ADMIN" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>ADMIN PAGE</title>
+    <meta charset="utf-8" />
+    <meta charset="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link href="custom.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class=" navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+                        </button>
+                        <a class="navbar-brand" href="HOME.aspx"><span>
+                            <img src="images/images.png" alt="SEEDLINK" height="30" /></span> SEEDLINK </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="HOME.aspx">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="CONTACTUS.aspx">CONTACT US</a></li>
+                            <li><a href="#">BLOG</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li> <a href="Add Products.aspx">ADD PRODUCTS</a></li>
+                                    </ul>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> MANAGE  <b class="caret"></b></a>
+                            <ul class=" dropdown-menu">
+                                <li><a href="ADDPRODUCTTYPE.aspx">ADD PRODUCT TYPE</a></li>
+                                <li><a href="ADDCATEGORY.aspx">ADD CATEGORY</a></li>
+                                <li><a href="SUBCATEGORY.aspx">ADD SUB CATEGORY</a></li>
+                                <li><a href="ADDSIZE.aspx">ADD SIZE</a></li>
+                            </ul>
+                            
+
+
+                            <li>
+                                
+                            <asp:Button ID="btnAdminlogout" CssClass="btn btn-success navbar-btn" runat="server" Text="SIGN OUT" OnClick="btnAdminlogout_Click" />
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!----footer--->
+    <footer>
+        <div class="container">
+            <p class="pull-right"><a href="HOME.aspx">BACK TO TOP</a></p>
+            <p><a href="HOME.aspx">HOME</a>&middot;<a href="#">ABOUT</a>&middot;<a href="CONTACTUS.aspx">CONTACT US</a> </p>
+        </div>
+    </footer>
+   
+</body>
+</html>

@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DDA7F60-6893-4E74-BFEF-B48FA91C409E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SEEDLINK</RootNamespace>
+    <AssemblyName>SEEDLINK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44384</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add Products.aspx" />
+    <Content Include="ADDCATEGORY.aspx" />
+    <Content Include="ADDPRODUCTTYPE.aspx" />
+    <Content Include="ADMINHOME.aspx" />
+    <Content Include="CART%281%29.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="FloweringPlants.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="ADMIN.Master" />
+    <Content Include="images\air purifiers\black cardinal.jpg" />
+    <Content Include="images\air purifiers\black dragon.jpg" />
+    <Content Include="images\air purifiers\golden pothos.jpg" />
+    <Content Include="images\air purifiers\juliette.jpg" />
+    <Content Include="images\air purifiers\key lime.jpg" />
+    <Content Include="images\air purifiers\lucky bamboo.jpg" />
+    <Content Include="images\air purifiers\midori.jpg" />
+    <Content Include="images\air purifiers\neon pothos.jpg" />
+    <Content Include="images\air purifiers\parlor palm.jpg" />
+    <Content Include="images\air purifiers\pearls and jade pothos.jpg" />
+    <Content Include="images\air purifiers\sliver bay.jpg" />
+    <Content Include="images\air purifiers\snake plant.jpg" />
+    <Content Include="images\air purifiers\song of india.jpg" />
+    <Content Include="images\blank.png" />
+    <Content Include="images\BONSAI\BonsaiMalpighiacoccigera 2400.jpg" />
+    <Content Include="images\BONSAI\Boxwood 2050.jpg" />
+    <Content Include="images\BONSAI\ficus_religiosa 2150.jpg" />
+    <Content Include="images\BONSAI\JadeCrassulaOvataBonsai- 2499.jpg" />
+    <Content Include="images\BONSAI\Pine_  1850.jpg" />
+    <Content Include="images\BONSAI\sandpaper 2850.jpg" />
+    <Content Include="images\BONSAI\Thuja_Chinnensis_ 850.jpg" />
+    <Content Include="images\BONSAI\tigerbark 1950.jpg" />
+    <Content Include="images\BOUQUETS\BLOMING BEAUTY.jpg" />
+    <Content Include="images\BOUQUETS\CHOCOLATE AND ROSES.jpg" />
+    <Content Include="images\BOUQUETS\COLORFUL ROSES.jpg" />
+    <Content Include="images\BOUQUETS\gorgeous-mixed-flowers.jpg" />
+    <Content Include="images\BOUQUETS\LILYS AND CARNATIONS.jpg" />
+    <Content Include="images\BOUQUETS\mixed-floral.jpg" />
+    <Content Include="images\BOUQUETS\PRETTY BUNCH.jpg" />
+    <Content Include="images\BOUQUETS\PURPLE ORCHID.jpg" />
+    <Content Include="images\BOUQUETS\RED ROSE BEAUTIFUL BUNCH.jpg" />
+    <Content Include="images\BOUQUETS\RED VELVET ROSES.jpg" />
+    <Content Include="images\BOUQUETS\Same-Day-09-D.jpg" />
+    <Content Include="images\BOUQUETS\SCARLET ROSES.jpg" />
+    <Content Include="images\BOUQUETS\SNOW WHITE.jpg" />
+    <Content Include="images\FicuselasticaShrivereana.jpg" />
+    <Content Include="images\flowering plants\Abelia_-Aboli_-Arka_Ambara-Orange_360x.jpg" />
+    <Content Include="images\flowering plants\Bougainvillea_%28WHITE%29.jpg" />
+    <Content Include="images\flowering plants\Bougainvillea_California_Gold_ %28YELLOW%29.jpg" />
+    <Content Include="images\flowering plants\BUSH CLOCK VINE.jpg" />
+    <Content Include="images\flowering plants\crape jasmine-Chandni_360x.jpg" />
+    <Content Include="images\flowering plants\CRAPE JASMINE.jpg" />
+    <Content Include="images\flowering plants\drawf Hibiscus.jpg" />
+    <Content Include="images\flowering plants\drawf pink hibiscus.jpg" />
+    <Content Include="images\flowering plants\drawf white hibiscus.jpg" />
+    <Content Include="images\flowering plants\drawf yellow hibiscus.jpg" />
+    <Content Include="images\flowering plants\Dwarf_Orange_Ixora_360x.jpg" />
+    <Content Include="images\flowering plants\Dwarf_Pink_Ixora_360x.jpg" />
+    <Content Include="images\flowering plants\flaming glorybower.jpg" />
+    <Content Include="images\flowering plants\HibiscusLunaWhite- 350.jpg" />
+    <Content Include="images\flowering plants\hoyasweetscent 550.png" />
+    <Content Include="images\flowering plants\hoyaviola %28YELLOW%29.jpg" />
+    <Content Include="images\flowering plants\Ixora_coccinea_Odorata.jpg" />
+    <Content Include="images\flowering plants\jungle flame %28red%29.jpg" />
+    <Content Include="images\flowering plants\jungle flame%28yellow%29.jpg" />
+    <Content Include="images\flowering plants\Mahara_Beauty_Purple_ 400.jpg" />
+    <Content Include="images\flowering plants\Mogra %28bella%29.jpg" />
+    <Content Include="images\flowering plants\Mogra %28butt%29.jpg" />
+    <Content Include="images\flowering plants\Orange_King_Bougainvillea_%28ORANGE KING%29.jpg" />
+    <Content Include="images\flowering plants\plumeria rubra.jpg" />
+    <Content Include="images\flowering plants\Plumeria_Alba.jpg" />
+    <Content Include="images\flowering plants\Plumeria_King_Napranum_ 450.jpg" />
+    <Content Include="images\flowering plants\rosy trumpet tree.jpg" />
+    <Content Include="images\GIFTING\11_500x.jpg" />
+    <Content Include="images\GIFTING\Alluring_red_briar_2_360x.jpg" />
+    <Content Include="images\GIFTING\a_frosty_floret_1_500x.jpg" />
+    <Content Include="images\GIFTING\By_the_bay_1_500x.jpg" />
+    <Content Include="images\GIFTING\Croc_s_Quest_2_360x.jpg" />
+    <Content Include="images\GIFTING\donkey_paradise_1_500x.jpg" />
+    <Content Include="images\GIFTING\Flaming_Flora_1_500x.jpg" />
+    <Content Include="images\GIFTING\Penguin_s_turf_2_360x.jpg" />
+    <Content Include="images\GIFTING\PRESEVERED BOTTLES.jpg" />
+    <Content Include="images\GIFTING\Privy_Prattle_1_500x.jpg" />
+    <Content Include="images\glyphicons\facebook.png" />
+    <Content Include="images\glyphicons\insta.png" />
+    <Content Include="images\glyphicons\twitter.png" />
+    <Content Include="images\ICONS\adeniums_68737e99-b00b-44ba-a27a-7acd6e17bb3c_280x.jpg" />
+    <Content Include="images\ICONS\airpurifier_280x.jpg" />
+    <Content Include="images\ICONS\air_plants_1_280x.jpg" />
+    <Content Include="images\ICONS\artificial_plants_1_280x.jpg" />
+    <Content Include="images\ICONS\birdscorner_280x.jpg" />
+    <Content Include="images\ICONS\bonsai_9d1dc44a-7cf1-49d7-ae5c-28b254762485_280x.jpg" />
+    <Content Include="images\ICONS\cactus_280x.jpg" />
+    <Content Include="images\ICONS\dreamcatcher_280x.jpg" />
+    <Content Include="images\ICONS\Fertilizer_280x.png" />
+    <Content Include="images\ICONS\fibre_glass_pot_1_280x.jpg" />
+    <Content Include="images\ICONS\flowering_280x.jpg" />
+    <Content Include="images\ICONS\gardenaccessories_280x.jpg" />
+    <Content Include="images\ICONS\gardenart_280x.jpg" />
+    <Content Include="images\ICONS\gardenlight_280x.jpg" />
+    <Content Include="images\ICONS\indoorplants_280x.jpg" />
+    <Content Include="images\ICONS\lowmaintenance_280x.jpg" />
+    <Content Include="images\ICONS\mossframes_280x.jpg" />
+    <Content Include="images\ICONS\pebbles_280x.jpg" />
+    <Content Include="images\ICONS\potstand_280x.jpg" />
+    <Content Include="images\ICONS\Succulent_plants_0a359812-febd-4109-b60b-b0fcce5cd9a6_280x.jpg" />
+    <Content Include="images\ICONS\tools_equipments_280x.jpg" />
+    <Content Include="images\ICONS\waterfountain_uruli_280x.jpg" />
+    <Content Include="images\indoor plants\aglaonema lipstick.jpg" />
+    <Content Include="images\indoor plants\Areca_Palm.jpg" />
+    <Content Include="images\indoor plants\boston fern.jpg" />
+    <Content Include="images\indoor plants\fox tail fern.jpg" />
+    <Content Include="images\indoor plants\moon shine.jpg" />
+    <Content Include="images\indoor plants\peace lily.jpg" />
+    <Content Include="images\indoor plants\red ivy.jpg" />
+    <Content Include="images\indoor plants\snake plant.jpg" />
+    <Content Include="images\indoor plants\spider plant.jpg" />
+    <Content Include="images\Moss Balls  Sansievieria Hahnii.jpg" />
+    <Content Include="images\noimg.png" />
+    <Content Include="images\ProductImages\01\01.jpg" />
+    <Content Include="images\ProductImages\01\02.jpg" />
+    <Content Include="images\ProductImages\01\03.jpg" />
+    <Content Include="images\scculents\aloe aristata.jpg" />
+    <Content Include="images\scculents\aloe vera.jpg" />
+    <Content Include="images\scculents\crassula capitella campfire.jpg" />
+    <Content Include="images\scculents\Crassula Capitella Thyrsiflora.jpg" />
+    <Content Include="images\scculents\drawf Jade.jpg" />
+    <Content Include="images\scculents\Echeveria blackprince.jpg" />
+    <Content Include="images\scculents\Echeveria Elegans.jpg" />
+    <Content Include="images\scculents\graptosedum Cesar.jpg" />
+    <Content Include="images\scculents\haworthia fascitata.jpg" />
+    <Content Include="images\scculents\sedeveria blue elf.jpg" />
+    <Content Include="images\scculents\trailing jade.jpg" />
+    <Content Include="images\silders\slider 1.jpg" />
+    <Content Include="images\silders\slider 2.jpg" />
+    <Content Include="images\silders\slider 3.jpg" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="productview.aspx" />
+    <Content Include="SUBCATEGORY.aspx" />
+    <Content Include="ADDSIZE.aspx" />
+    <Content Include="images\BOUQUETS\mixed-roses-romantic-bunch_1.webp" />
+    <Content Include=".editorconfig" />
+    <Content Include="WebForm3.aspx" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="HOME.aspx" />
+    <Content Include="images\Abelia_-Aboli_-Arka_Ambara-Orange_360x.jpg" />
+    <Content Include="images\AIR PURIFIER PLANTS.jpg" />
+    <Content Include="images\BONSAI.jpg" />
+    <Content Include="images\Bougainvillea_%28WHITE%29.jpg" />
+    <Content Include="images\Bougainvillea_California_Gold_ %28YELLOW%29.jpg" />
+    <Content Include="images\BOUQUETS.jpg" />
+    <Content Include="images\BUSH CLOCK VINE.jpg" />
+    <Content Include="images\crape jasmine-Chandni_360x.jpg" />
+    <Content Include="images\CRAPE JASMINE.jpg" />
+    <Content Include="images\flowering plants.jpg" />
+    <Content Include="images\images.png" />
+    <Content Include="images\photo-1525498128493-380d1990a112.jpg" />
+    <Content Include="images\slider 1.jpg.png" />
+    <Content Include="images\Untitled.jpg" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SignIn%281%29.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="custom.css" />
+    <Content Include="USERHOME.aspx" />
+    <Content Include="ViewProducts.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="USER.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Products.aspx.cs">
+      <DependentUpon>Add Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add Products.aspx.designer.cs">
+      <DependentUpon>Add Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDCATEGORY.aspx.cs">
+      <DependentUpon>ADDCATEGORY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDCATEGORY.aspx.designer.cs">
+      <DependentUpon>ADDCATEGORY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDPRODUCTTYPE.aspx.cs">
+      <DependentUpon>ADDPRODUCTTYPE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDPRODUCTTYPE.aspx.designer.cs">
+      <DependentUpon>ADDPRODUCTTYPE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN.Master.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Master.designer.cs">
+      <DependentUpon>ADMIN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINHOME.aspx.cs">
+      <DependentUpon>ADMINHOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINHOME.aspx.designer.cs">
+      <DependentUpon>ADMINHOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CART%281%29.aspx.cs">
+      <DependentUpon>CART%281%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CART%281%29.aspx.designer.cs">
+      <DependentUpon>CART%281%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FloweringPlants.aspx.cs">
+      <DependentUpon>FloweringPlants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FloweringPlants.aspx.designer.cs">
+      <DependentUpon>FloweringPlants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.aspx.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME.aspx.designer.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="productview.aspx.cs">
+      <DependentUpon>productview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="productview.aspx.designer.cs">
+      <DependentUpon>productview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn%281%29.aspx.cs">
+      <DependentUpon>SignIn%281%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn%281%29.aspx.designer.cs">
+      <DependentUpon>SignIn%281%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USER.Master.cs">
+      <DependentUpon>USER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER.Master.designer.cs">
+      <DependentUpon>USER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USERHOME.aspx.cs">
+      <DependentUpon>USERHOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USERHOME.aspx.designer.cs">
+      <DependentUpon>USERHOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SUBCATEGORY.aspx.cs">
+      <DependentUpon>SUBCATEGORY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SUBCATEGORY.aspx.designer.cs">
+      <DependentUpon>SUBCATEGORY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADDSIZE.aspx.cs">
+      <DependentUpon>ADDSIZE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADDSIZE.aspx.designer.cs">
+      <DependentUpon>ADDSIZE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProducts.aspx.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProducts.aspx.designer.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62005</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44384/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

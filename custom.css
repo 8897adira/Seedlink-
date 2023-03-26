@@ -1,0 +1,777 @@
+﻿
+.center {
+    text-align: center;
+}
+
+.center-page {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.footer-pos {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 800px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.brand {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.proname {
+    font-size: 15px;
+    line-height: 17px;
+    font-family: sans-serif;
+    color: forestgreen;
+}
+
+.proprice {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    font-family: sans-serif;
+}
+
+.proOgPrice {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: sans-serif;
+    text-decoration:line-through;
+    color: gray;
+}
+
+.productprice {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    font-family: sans-serif;
+    color: brown;
+}
+
+
+
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 80%;
+}
+
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+}
+
+.probrand {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.proNameView {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: sans-serif;
+    color: #696e80;
+}
+
+.proOgPriceView{
+    font-size:15px;
+
+    font-family:sans-serif;
+    font-weight:400;
+    text-decoration:line-through;
+    color:gray;
+}
+
+.proPriceView {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    line-height:17px;
+    margin-top:10px;
+}
+
+.devDet1{
+    border-bottom:1px dashed;
+    margin-bottom:20px;
+}
+
+.h5Size{
+    font-weight:600;
+}
+
+.input[type=radio]{
+    margin-right:10px;
+    margin-left:10px;
+}
+
+.mainbutton{
+    border-radius:3px;
+    outline:0;
+    margin-top:10px;
+    min-height:22px;
+    font-size:13px;
+    font-weight:500;
+    background-color:#ff5722;
+    color:#fff;
+    min-width:108px;
+    border:1px solid#ff5722;
+}
+
+#btnCart {
+    margin-right:6px;
+}
+
+.Removebutton{
+    border-radius:3px;
+    outline:0;
+    margin-top:10px;
+    font-size:13px;
+    min-height:22px;
+    min-width:90px;
+    font-weight:500;
+    background-color:#ff5722;
+    border:1px solid #ff5722;
+    color: #fff;
+
+}
+.priceGray{
+    font-size:15px;
+    font-family:sans-serif;
+    font-weight:400;
+    color:dimgray;
+}
+
+.priceGreen {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color:#20bd99;
+}
+
+.proNameViewCart {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color:#696e80;
+}
+
+.buyNowbtn{
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    min-height: 22px;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #14cda8;
+    color: #fff;
+    border: 1px solid#14cda8;
+    width:100%;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('../font/ubuntu-webfont.woff2'), url('../font/ubuntu-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#notfound {
+    position: relative;
+    height: 100vh;
+}
+
+    #notfound .notfound {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+.notfound {
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+}
+
+    .notfound .notfound-404 {
+        position: relative;
+        height: 240px;
+    }
+
+        .notfound .notfound-404 h1 {
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 252px;
+            font-weight: 900;
+            margin: 0px;
+            color: #262626;
+            text-transform: uppercase;
+            letter-spacing: -40px;
+            margin-left: -20px;
+        }
+
+            .notfound .notfound-404 h1 > span {
+                text-shadow: -8px 0px 0px #fff;
+            }
+
+        .notfound .notfound-404 h3 {
+            font-family: 'Cabin', sans-serif;
+            position: relative;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #262626;
+            margin: 0px;
+            letter-spacing: 3px;
+            padding-left: 6px;
+        }
+
+    .notfound h2 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #000;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 {
+        height: 200px;
+    }
+
+        .notfound .notfound-404 h1 {
+            font-size: 200px;
+        }
+}
+
+@media only screen and (max-width: 480px) {
+    .notfound .notfound-404 {
+        height: 162px;
+    }
+
+        .notfound .notfound-404 h1 {
+            font-size: 162px;
+            height: 150px;
+            line-height: 162px;
+        }
+
+    .notfound h2 {
+        font-size: 16px;
+    }
+}
+
+
+
+
+.center {
+    text-align: center;
+    height: 95px;
+}
+
+.center1 {
+    text-align: center;
+}
+
+.center-page {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.footer-pos {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 600px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* View Products CSS*/
+
+.ProBrand {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-family: 'ubunturegular';
+}
+
+.ProName {
+    font-size: 18px;
+    line-height: 17px;
+    font-family: 'ubunturegular';
+    color: teal;
+}
+
+.ProPrice {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'ubunturegular';
+    font-weight: 600;
+}
+
+.proOgPrice {
+    font-size: 13px;
+    line-height: 17px;
+    font-family: 'ubunturegular';
+    font-weight: 400;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.proPriceDiscount {
+    font-size: 13px;
+    font-family: 'ubunturegular';
+    font-weight: 600;
+    color: tomato;
+}
+
+/* Product View CSS */
+
+.ProNameView {
+    font-size: 27px;
+    line-height: 25px;
+    font-family: 'ubunturegular';
+    color: #696e80;
+}
+
+.proOgPriceView {
+    font-size: 21px;
+    font-family: 'ubunturegular';
+    font-weight: 600;
+    text-decoration: line-through;
+    color: royalblue;
+}
+
+.proPriceDiscountView {
+    font-size: 18px;
+    font-family: 'ubunturegular';
+    font-weight: 400;
+    color: tomato;
+}
+
+.ProPriceView {
+    font-size: 24px;
+    line-height: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.divDet1 {
+    border-bottom: 1px dashed #ff6a00;
+    margin-bottom: 20px;
+}
+
+.h5size {
+    font-weight: 600;
+}
+
+.mainButton {
+    display: inline-block;
+    border-radius: 18px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'ubunturegular';
+    font-size: 25px;
+    font-weight: 200;
+    padding: 8px;
+    width: 120px;
+    transition: all 0.8s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btnAddtoCart {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    font-family: 'ubunturegular';
+    font-size: 19px;
+    text-align: center;
+    min-height: 22px;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #d1783d;
+    color: white;
+    transition: all 0.8s;
+    cursor: pointer;
+    border: 1px solid #d1783d;
+    width: 130px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #2dc26b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    width: 95px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+.myFont {
+    font-family: 'ubunturegular';
+}
+
+.tab {
+    margin-right: 5em;
+}
+
+.h3Font {
+    font-family: 'ubunturegular';
+    font-size: 20px;
+}
+
+.proDisc {
+    font-family: 'ubunturegular';
+    font-size: 18px;
+}
+
+.lblProDisc {
+    font-family: 'ubunturegular';
+    font-size: 23px;
+}
+
+#btnCart {
+    margin-right: 6px;
+}
+
+.RemoveButton1 {
+    border-radius: 30px;
+    outline: 0;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'ubunturegular';
+    min-height: 22px;
+    min-width: 90px;
+    font-weight: 500;
+    background-color: #FF5722;
+    border: 1px solid #FF5722;
+    color: #fff;
+}
+
+.priceGray {
+    font-size: 18px;
+    font-family: 'ubunturegular';
+    font-weight: 400;
+    color: dimgray;
+}
+
+.priceGreen {
+    font-size: 18px;
+    font-family: 'ubunturegular';
+    font-weight: 400;
+    color: #20bf99;
+}
+
+.proNameViewCart {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'ubunturegular';
+    font-weight: 600;
+    color: #696e80;
+}
+
+.buyNowbtn {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    font-family: 'ubunturegular';
+    font-size: 23px;
+    min-height: 22px;
+    padding: 10px 15px;
+    font-weight: 800;
+    background-color: #14cda8;
+    color: #fff;
+    border: 1px solid #14cda8;
+    width: 100%;
+}
+
+.ProPriceViewCart {
+    font-size: 18px;
+    font-family: 'ubunturegular';
+    line-height: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.proOgPriceViewCart {
+    font-size: 16px;
+    font-family: 'ubunturegular';
+    font-weight: 600;
+    text-decoration: line-through;
+    color: royalblue;
+}
+
+.cartTotal {
+    font-size: 23px;
+    line-height: 17px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.Qty {
+    font-family: 'ubunturegular';
+    font-size: 19px;
+}
+
+.ePbtn {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    font-family: 'ubunturegular';
+    font-size: 23px;
+    min-height: 22px;
+    padding: 10px 15px;
+    font-weight: 800;
+    background-color: #14cda8;
+    color: #fff;
+    border: 1px solid #14cda8;
+    width: 20%;
+}
+
+
+.scrollable-menu {
+    height: auto;
+    max-height: 600px;
+    overflow-x: hidden;
+}
+
+.vl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.BtnAdd2Cart {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #55917f;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .BtnAdd2Cart span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .BtnAdd2Cart span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .BtnAdd2Cart:hover span {
+        padding-right: 25px;
+    }
+
+        .BtnAdd2Cart:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+.MSRH1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    height: 100%;
+}
+
+/* extra positioning */
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+}
+
+    .thumbnail .caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+
+
+body.dark {
+    background-color: rgb(30,34,39);
+    color: #fff;
+}
+
+    body.dark code[class*=language-],
+    body.dark table tbody > tr:nth-child(odd) > td,
+    body.dark table tbody > tr:nth-child(odd) > th {
+        background: #282c34
+    }
+
+.btnQuickBuy {
+    display: inline-block;
+    background-color: #3e5869;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 45%;
+}
+
+.btnQuickCart {
+    display: inline-block;
+    background-color: #75cdff;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    width: 45%;
+}
+
+.MSCredits {
+    font-size: 19px;
+    font-family: 'ubunturegular';
+    font-weight: 500;
+    color: #820505;
+}
+
+.MSCreditsPrice {
+    font-size: 19px;
+    font-family: 'ubunturegular';
+    font-weight: 500;
+    color: #820505;
+}
+
+.MSCView {
+    font-size: 21px;
+    font-family: 'ubunturegular';
+    font-weight: 600;
+    color: royalblue;
+}
+
